@@ -1,0 +1,9 @@
+{
+  "name": "hopezaa-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium programming course website with local Node backend.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

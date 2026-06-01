@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HopeZaa Academy | คอร์สเขียนโปรแกรมระดับพรีเมียม</title>
+  <meta name="description" content="เว็บคอร์สเรียนเขียนโปรแกรมออนไลน์ระดับพรีเมียม พร้อมระบบสมาชิก ตะกร้า ชำระเงิน และแอดมินจัดการคอร์ส" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Serif+Thai:wght@300;400;500;600;700&family=Sarabun:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-emblem">
+        <svg viewBox="0 0 100 100" width="60" height="60">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="1"/>
+          <path d="M22 64 L50 18 L78 64 M34 48 H66 M43 64 H57" stroke="currentColor" stroke-width="1.2" fill="none"/>
+          <circle cx="50" cy="70" r="8" fill="none" stroke="currentColor" stroke-width="1"/>
+        </svg>
+      </div>
+      <p class="preloader-text">HOPEZAA ACADEMY</p>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-mark">HZ</span>
+        <span class="nav-logo-text">HOPEZAA ACADEMY</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">เกี่ยวกับเรา</a>
+        <a href="#services">คอร์ส</a>
+        <a href="#expertise">จุดเด่น</a>
+        <a href="#team">เมนเทอร์</a>
+        <a href="#testimonials">รีวิว</a>
+        <a href="#contact">ติดต่อ</a>
+      </nav>
+      <button class="nav-cta" id="navAuthBtn" type="button">เข้าสู่ระบบ</button>
+      <button class="nav-toggle" id="navToggle" aria-label="เปิดเมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav>
+      <a href="#about">เกี่ยวกับเรา</a>
+      <a href="#services">คอร์ส</a>
+      <a href="#expertise">จุดเด่น</a>
+      <a href="#team">เมนเทอร์</a>
+      <a href="#testimonials">รีวิว</a>
+      <a href="#contact">ติดต่อ</a>
+      <button class="mobile-auth-link" id="mobileAuthBtn" type="button">เข้าสู่ระบบ</button>
+    </nav>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-bg-grain"></div>
+      <div class="hero-bg-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="line"></span>
+        <span>PREMIUM PROGRAMMING COURSES</span>
+        <span class="line"></span>
+      </div>
+      <h1 class="hero-title">
+        <span class="reveal-up">เรียนเขียนโปรแกรม</span>
+        <span class="reveal-up gold-text"><em>แบบพรีเมียม</em></span>
+        <span class="reveal-up">จากพื้นฐานสู่ผลงานจริง</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        คอร์สออนไลน์สำหรับคนที่อยากสร้างเว็บ แอป และระบบ backend ให้ใช้งานได้จริง<br/>
+        พร้อม roadmap ชัดเจน โค้ดจริง โปรเจกต์จริง และระบบสมาชิกสำหรับติดตามคอร์สของคุณ
+      </p>
+      <div class="hero-actions reveal-up">
+        <button class="btn btn-gold" type="button" data-open-auth>
+          <span>เริ่มเรียนวันนี้</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="#services" class="btn btn-ghost">ดูคอร์สทั้งหมด</a>
+      </div>
+
+      <div class="hero-stats reveal-up">
+        <div class="stat">
+          <div class="stat-num" data-count="18">0</div>
+          <div class="stat-label">คอร์สเข้มข้น</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="4200">0</div>
+          <div class="stat-label">ผู้เรียนทั้งหมด</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="96">0</div>
+          <div class="stat-label">% เรียนจบโปรเจกต์</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="36">0</div>
+          <div class="stat-label">โปรเจกต์ฝึกทำ</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>เลื่อนลง</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="marquee">
+    <div class="marquee-track">
+      <span>HTML & CSS</span><span>•</span>
+      <span>JavaScript</span><span>•</span>
+      <span>React</span><span>•</span>
+      <span>Node.js</span><span>•</span>
+      <span>Database</span><span>•</span>
+      <span>API</span><span>•</span>
+      <span>Full Stack</span><span>•</span>
+      <span>HTML & CSS</span><span>•</span>
+      <span>JavaScript</span><span>•</span>
+      <span>React</span><span>•</span>
+      <span>Node.js</span><span>•</span>
+      <span>Database</span><span>•</span>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal-up">
+        <div class="about-frame">
+          <div class="about-img course-about-img"></div>
+          <div class="about-emblem">
+            <svg viewBox="0 0 100 100" width="100%" height="100%">
+              <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="0.5"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.5"/>
+              <text x="50" y="35" text-anchor="middle" fill="currentColor" font-size="6" letter-spacing="2">HOPEZAA</text>
+              <text x="50" y="72" text-anchor="middle" fill="currentColor" font-size="6" letter-spacing="2">ACADEMY</text>
+              <path d="M28 55 L45 38 L55 48 L72 31 M28 66 H72" stroke="currentColor" stroke-width="0.8" fill="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="badge-num">36+</div>
+          <div class="badge-label">โปรเจกต์จริงในคอร์ส</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-eyebrow reveal-up">— เกี่ยวกับสถาบัน</div>
+        <h2 class="section-title reveal-up">
+          สอนให้เข้าใจ<em class="gold-text">แก่นของโค้ด</em><br/>
+          ไม่ใช่แค่จำตามคลิป
+        </h2>
+        <p class="reveal-up">
+          <strong>HopeZaa Academy</strong> ออกแบบคอร์สเขียนโปรแกรมสำหรับผู้เริ่มต้นจนถึงคนที่อยากต่อยอดเป็น Full Stack Developer โดยเน้นการลงมือทำจริง อธิบายจากโครงสร้างพื้นฐาน ไปจนถึงระบบที่ต่อยอดใช้งานได้
+        </p>
+        <p class="reveal-up">
+          หลังล็อกอิน ผู้เรียนจะเข้าหน้ารายการคอร์ส เพิ่มคอร์สลงตะกร้า กดซื้อ ชำระเงินผ่านหน้า QR และระบบจะบันทึกสถานะการซื้อไว้ในฐานข้อมูลทันที
+        </p>
+        <ul class="about-list reveal-up">
+          <li><span class="check">✦</span> Roadmap ชัดเจนตั้งแต่ HTML, JavaScript, React, Node.js ถึง Database</li>
+          <li><span class="check">✦</span> คอร์สมีจำนวนที่นั่งและจำนวนผู้เรียน อัปเดตได้จากแอดมิน</li>
+          <li><span class="check">✦</span> ระบบรีวิวแสดงบนหน้าแรกแบบสไลด์อัตโนมัติ</li>
+          <li><span class="check">✦</span> Backend เก็บข้อมูลผู้ใช้ ตะกร้า ออเดอร์ และรีวิวในฐานข้อมูล local</li>
+        </ul>
+        <button class="btn btn-outline reveal-up" type="button" data-open-auth>
+          <span>เข้าสู่ระบบเพื่อดูคอร์ส</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up">— คอร์สแนะนำ</div>
+        <h2 class="section-title reveal-up">
+          เส้นทางเรียนโปรแกรม<br/>
+          <em class="gold-text">ที่ต่อยอดได้จริง</em>
+        </h2>
+        <p class="section-desc reveal-up">
+          ตัวอย่างคอร์สยอดนิยมบนระบบ หลังเข้าสู่ระบบจะเห็นราคา จำนวนที่นั่ง ตะกร้า และปุ่มซื้อแบบเต็มรูปแบบ
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal-up">
+          <div class="service-num">๐๑</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 60 60" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M14 16 H46 V44 H14 Z"/><path d="M21 26 L27 32 L21 38 M32 38 H41"/>
+            </svg>
+          </div>
+          <h3>Frontend Foundation</h3>
+          <p>HTML, CSS, responsive layout, animation และการจัดหน้าเว็บให้สวยระดับใช้งานจริง</p>
+          <button class="service-link" type="button" data-open-auth>เข้าสู่ระบบเพื่อซื้อ <span>→</span></button>
+        </article>
+
+        <article class="service-card reveal-up">
+          <div class="service-num">๐๒</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 60 60" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="30" cy="30" r="19"/><path d="M30 11 V49 M11 30 H49 M20 20 L40 40 M40 20 L20 40"/>
+            </svg>
+          </div>
+          <h3>JavaScript Mastery</h3>
+          <p>พื้นฐานภาษา DOM, async/await, fetch API และการจัด state สำหรับเว็บจริง</p>
+          <button class="service-link" type="button" data-open-auth>เข้าสู่ระบบเพื่อซื้อ <span>→</span></button>
+        </article>
+
+        <article class="service-card reveal-up">
+          <div class="service-num">๐๓</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 60 60" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="30" cy="30" r="5"/><ellipse cx="30" cy="30" rx="24" ry="9"/><ellipse cx="30" cy="30" rx="24" ry="9" transform="rotate(60 30 30)"/><ellipse cx="30" cy="30" rx="24" ry="9" transform="rotate(120 30 30)"/>
+            </svg>
+          </div>
+          <h3>React Professional</h3>
+          <p>Component, hook, form, routing และ dashboard ที่พร้อมต่อยอดเป็นโปรเจกต์ลูกค้า</p>
+          <button class="service-link" type="button" data-open-auth>เข้าสู่ระบบเพื่อซื้อ <span>→</span></button>
+        </article>
+
+        <article class="service-card reveal-up">
+          <div class="service-num">๐๔</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 60 60" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M16 16 H44 V44 H16 Z"/><path d="M23 23 H37 M23 30 H37 M23 37 H31"/>
+            </svg>
+          </div>
+          <h3>Node.js Backend</h3>
+          <p>สร้าง API, auth, session, file database และระบบคำสั่งซื้อแบบครบ flow</p>
+          <button class="service-link" type="button" data-open-auth>เข้าสู่ระบบเพื่อซื้อ <span>→</span></button>
+        </article>
+
+        <article class="service-card reveal-up">
+          <div class="service-num">๐๕</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 60 60" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1">
+              <ellipse cx="30" cy="15" rx="18" ry="7"/><path d="M12 15 V43 C12 47 20 51 30 51 C40 51 48 47 48 43 V15"/><path d="M12 29 C12 33 20 37 30 37 C40 37 48 33 48 29"/>
+            </svg>
+          </div>
+          <h3>Database Design</h3>
+          <p>ออกแบบข้อมูล user, cart, order, review และโครงสร้างที่ดูแลต่อได้ง่าย</p>
+          <button class="service-link" type="button" data-open-auth>เข้าสู่ระบบเพื่อซื้อ <span>→</span></button>
+        </article>
+
+        <article class="service-card reveal-up">
+          <div class="service-num">๐๖</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 60 60" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M10 40 L24 26 L34 36 L50 18"/><path d="M13 16 H47 V46 H13 Z"/>
+            </svg>
+          </div>
+          <h3>Full Stack Portfolio</h3>
+          <p>รวมทุกทักษะเพื่อสร้างเว็บขายคอร์ส ระบบสมาชิก และระบบแอดมินของตัวเอง</p>
+          <button class="service-link" type="button" data-open-auth>เข้าสู่ระบบเพื่อซื้อ <span>→</span></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="academy-app" id="coursesApp" hidden>
+    <div class="container">
+      <div class="app-shell">
+        <div class="app-topbar">
+          <div>
+            <div class="section-eyebrow">— Member Area</div>
+            <h2 class="section-title">รายการ<em class="gold-text">คอร์สเรียน</em></h2>
+            <p id="memberGreeting">เลือกซื้อคอร์ส เพิ่มลงตะกร้า หรือชำระเงินได้จากหน้านี้</p>
+          </div>
+          <div class="member-actions">
+            <button class="btn btn-outline" type="button" id="refreshAppBtn">รีเฟรชข้อมูล</button>
+            <button class="btn btn-gold" type="button" id="logoutBtn">ออกจากระบบ</button>
+          </div>
+        </div>
+
+        <div class="member-grid">
+          <main>
+            <div class="course-toolbar">
+              <button class="course-tab active" type="button" data-view="all">คอร์สทั้งหมด</button>
+              <button class="course-tab" type="button" data-view="owned">คอร์สที่ซื้อแล้ว</button>
+            </div>
+            <div class="course-grid" id="courseGrid"></div>
+          </main>
+
+          <aside class="cart-panel">
+            <div class="panel-head">
+              <span>ตะกร้าของฉัน</span>
+              <strong id="cartCount">0</strong>
+            </div>
+            <div class="cart-list" id="cartList"></div>
+            <div class="cart-total">
+              <span>ยอดรวม</span>
+              <strong id="cartTotal">฿0</strong>
+            </div>
+            <button class="btn btn-gold btn-block" type="button" id="checkoutCartBtn">ชำระเงินทั้งตะกร้า</button>
+          </aside>
+        </div>
+
+        <section class="admin-panel" id="adminPanel" hidden>
+          <div class="admin-head">
+            <div>
+              <div class="section-eyebrow">— Admin Control</div>
+              <h3>จัดการคอร์สและรีวิว</h3>
+              <p>แอดมินสามารถเพิ่มหรือลดจำนวนผู้เรียน/ที่นั่งของแต่ละคอร์ส และเขียนรีวิวขึ้นหน้าแรกได้</p>
+            </div>
+            <span class="admin-badge">HopeZaa</span>
+          </div>
+          <div class="admin-layout">
+            <div class="admin-course-list" id="adminCourseList"></div>
+            <form class="admin-review-form" id="adminReviewForm">
+              <h4>เพิ่มรีวิวหน้าแรก</h4>
+              <label>ชื่อผู้รีวิว</label>
+              <input type="text" name="name" required placeholder="เช่น คุณภาคิน" />
+              <label>คอร์สที่เรียน</label>
+              <select name="courseId" id="reviewCourseSelect" required></select>
+              <label>ข้อความรีวิว</label>
+              <textarea name="message" rows="5" required placeholder="เขียนรีวิวที่ต้องการแสดงบนหน้าแรก"></textarea>
+              <button class="btn btn-gold btn-block" type="submit">เพิ่มรีวิว</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="expertise" id="expertise">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow reveal-up">— ทำไมต้องเลือกเรา</div>
+        <h2 class="section-title reveal-up">
+          เรียนเป็นระบบ<em class="gold-text">เหมือนทำงานจริง</em><br/>
+          ตั้งแต่บรรทัดแรกถึง deploy
+        </h2>
+      </div>
+
+      <div class="expertise-grid">
+        <div class="expertise-item reveal-up">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 50 50" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M8 36 L20 24 L27 31 L42 14"/><path d="M8 42 H42"/>
+            </svg>
+          </div>
+          <h4>Roadmap ต่อเนื่อง</h4>
+          <p>คอร์สเรียงจากพื้นฐานไปขั้นสูง ไม่กระโดดข้ามแนวคิดสำคัญที่ต้องใช้จริง</p>
+        </div>
+
+        <div class="expertise-item reveal-up">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 50 50" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1">
+              <rect x="8" y="10" width="34" height="28" rx="2"/><path d="M15 20 L21 26 L15 32 M25 32 H35"/>
+            </svg>
+          </div>
+          <h4>โค้ดจริงทุกบท</h4>
+          <p>ทุกคอร์สมีโจทย์และโปรเจกต์ให้สร้างเป็นชิ้นงาน ไม่ใช่เรียนทฤษฎีอย่างเดียว</p>
+        </div>
+
+        <div class="expertise-item reveal-up">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 50 50" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M25 6 L40 14 V25 C40 35 33 42 25 45 C17 42 10 35 10 25 V14 Z"/><path d="M18 25 L23 30 L33 20"/>
+            </svg>
+          </div>
+          <h4>ระบบสมาชิกครบ</h4>
+          <p>ระบบ login, cart, purchase และ admin ถูกต่อเข้ากับ backend เพื่อให้เห็น flow จริง</p>
+        </div>
+
+        <div class="expertise-item reveal-up">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 50 50" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="25" cy="25" r="18"/><path d="M25 13 V25 L34 30"/>
+            </svg>
+          </div>
+          <h4>เรียนตามเวลาตัวเอง</h4>
+          <p>ซื้อคอร์สแล้วข้อมูลจะถูกบันทึกในบัญชีผู้ใช้ กลับมาเรียนต่อได้จาก member area</p>
+        </div>
+
+        <div class="expertise-item reveal-up">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 50 50" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M10 38 H40 M15 38 V20 H23 V38 M27 38 V12 H35 V38"/>
+            </svg>
+          </div>
+          <h4>ติดตามจำนวนผู้เรียน</h4>
+          <p>คอร์สมีจำนวนผู้เรียนและที่นั่ง แอดมินปรับเพิ่มลดได้เพื่อใช้เป็นข้อมูลขายจริง</p>
+        </div>
+
+        <div class="expertise-item reveal-up">
+          <div class="expertise-icon">
+            <svg viewBox="0 0 50 50" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M12 15 H38 V34 H25 L16 42 V34 H12 Z"/><path d="M18 22 H32 M18 28 H28"/>
+            </svg>
+          </div>
+          <h4>รีวิวจากผู้เรียน</h4>
+          <p>หน้าแรกแสดงรีวิวแบบสไลด์ และ admin สามารถเพิ่มข้อความรีวิวใหม่ได้ทันที</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow reveal-up">— เมนเทอร์</div>
+        <h2 class="section-title reveal-up">
+          ทีมสอน<em class="gold-text">เขียนโปรแกรม</em><br/>
+          ที่เข้าใจผู้เริ่มต้น
+        </h2>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card reveal-up">
+          <div class="team-photo" data-initials="HZ">
+            <div class="team-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="GitHub">gh</a>
+                <a href="#" aria-label="Email">@</a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <div class="team-role">Lead Instructor</div>
+            <h4>HopeZaa</h4>
+            <p>Full Stack Mentor<br/>Frontend, Backend, Database และระบบสมาชิก</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow reveal-up">— รีวิวผู้เรียน</div>
+        <h2 class="section-title reveal-up">
+          เสียงจากคนที่<em class="gold-text">ลงมือสร้างจริง</em><br/>
+          และเห็นผลจริง
+        </h2>
+      </div>
+
+      <div class="testi-slider">
+        <div class="testi-track" id="testiTrack"></div>
+
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" type="button" aria-label="ก่อนหน้า">←</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" type="button" aria-label="ถัดไป">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="section-eyebrow reveal-up">— ติดต่อเรา</div>
+        <h2 class="section-title reveal-up">
+          เริ่มต้น<em class="gold-text">เส้นทางโค้ด</em><br/>
+          ของคุณวันนี้
+        </h2>
+        <p class="reveal-up">สอบถามรายละเอียดคอร์ส หรือสมัครสมาชิกเพื่อเลือกซื้อคอร์สและทดลอง flow ระบบทั้งหมด</p>
+
+        <ul class="contact-list">
+          <li class="reveal-up">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M21 16.5V19a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 4 11.4 19.8 19.8 0 0 1 .9 2.7 2 2 0 0 1 2.9.5h2.5a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L6.4 8.1a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">โทรศัพท์</div>
+              <a href="tel:+66999999999">+66 (0) 99-999-9999</a>
+            </div>
+          </li>
+          <li class="reveal-up">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">อีเมล</div>
+              <a href="mailto:hello@hopezaa-academy.dev">hello@hopezaa-academy.dev</a>
+            </div>
+          </li>
+          <li class="reveal-up">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">รูปแบบเรียน</div>
+              <p>ออนไลน์ 100%<br/>เรียนได้ทุกที่ พร้อมบันทึกข้อมูลคอร์สในบัญชีของคุณ</p>
+            </div>
+          </li>
+          <li class="reveal-up">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">เวลาตอบกลับ</div>
+              <p>ทุกวัน : 10.00 - 22.00 น.<br/>หรือสมัครสมาชิกเพื่อซื้อคอร์สได้ทันที</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal-up" id="contactForm">
+        <h3>สอบถามคอร์ส</h3>
+        <p class="form-sub">กรอกข้อมูลของคุณ ทีมงานจะติดต่อกลับโดยเร็วที่สุด</p>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>ชื่อ - นามสกุล</label>
+            <input type="text" name="name" required placeholder="กรอกชื่อ-นามสกุลของท่าน" />
+          </div>
+        </div>
+
+        <div class="form-row form-row-2">
+          <div class="form-field">
+            <label>เบอร์โทรศัพท์</label>
+            <input type="tel" name="phone" required placeholder="08X-XXX-XXXX" />
+          </div>
+          <div class="form-field">
+            <label>อีเมล</label>
+            <input type="email" name="email" required placeholder="email@example.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>คอร์สที่สนใจ</label>
+            <select name="subject" required>
+              <option value="">— เลือกคอร์ส —</option>
+              <option>Frontend Foundation</option>
+              <option>JavaScript Mastery</option>
+              <option>React Professional</option>
+              <option>Node.js Backend</option>
+              <option>Database Design</option>
+              <option>Full Stack Portfolio</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>รายละเอียด</label>
+            <textarea name="message" rows="4" required placeholder="อยากเรียนเป้าหมายแบบไหน หรือมีพื้นฐานประมาณไหน"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block">
+          <span>ส่งข้อความ</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-note">* ข้อมูลติดต่อจะถูกบันทึกในฐานข้อมูล local ของโปรเจกต์นี้</p>
+        <div class="form-success" id="formSuccess">
+          ส่งข้อมูลเรียบร้อย ทีมงานจะติดต่อกลับโดยเร็วที่สุด
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">HOPEZAA ACADEMY</div>
+          <p>เว็บคอร์สเขียนโปรแกรมออนไลน์ระดับพรีเมียม พร้อมระบบสมาชิก ตะกร้า ชำระเงิน และแผงแอดมินสำหรับจัดการข้อมูลจริง</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="GitHub">gh</a>
+            <a href="#" aria-label="Line">L</a>
+            <a href="#" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div>
+          <h5>คอร์ส</h5>
+          <ul>
+            <li><a href="#services">Frontend Foundation</a></li>
+            <li><a href="#services">JavaScript Mastery</a></li>
+            <li><a href="#services">React Professional</a></li>
+            <li><a href="#services">Node.js Backend</a></li>
+            <li><a href="#services">Full Stack Portfolio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>ระบบ</h5>
+          <ul>
+            <li><a href="#coursesApp">Member Area</a></li>
+            <li><a href="#coursesApp">ตะกร้าคอร์ส</a></li>
+            <li><a href="#coursesApp">ชำระเงิน QR</a></li>
+            <li><a href="#testimonials">รีวิวผู้เรียน</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>ติดต่อ</h5>
+          <ul>
+            <li>+66 (0) 99-999-9999</li>
+            <li>hello@hopezaa-academy.dev</li>
+            <li>เรียนออนไลน์ได้ทุกวัน</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© ๒๕๖๙ HopeZaa Academy · สงวนลิขสิทธิ์</p>
+        <div>
+          <button class="footer-link-btn" type="button" data-open-auth>เข้าสู่ระบบ</button>
+          <a href="#contact">สอบถามคอร์ส</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog auth-dialog" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="ปิด">×</button>
+      <div class="auth-tabs">
+        <button class="auth-tab active" type="button" data-auth-mode="login">เข้าสู่ระบบ</button>
+        <button class="auth-tab" type="button" data-auth-mode="register">สมัครสมาชิก</button>
+      </div>
+      <form class="auth-form" id="loginForm">
+        <h3 id="authTitle">เข้าสู่ระบบสมาชิก</h3>
+        <p>ใช้บัญชีผู้เรียน หรือบัญชีแอดมินเพื่อจัดการคอร์ส</p>
+        <label>Username</label>
+        <input type="text" name="username" required autocomplete="username" placeholder="เช่น Name1234" />
+        <label>Password</label>
+        <input type="password" name="password" required autocomplete="current-password" placeholder="รหัสผ่าน" />
+        <button class="btn btn-gold btn-block" type="submit">เข้าสู่ระบบ</button>
+      </form>
+      <form class="auth-form" id="registerForm" hidden>
+        <h3>สมัครสมาชิกใหม่</h3>
+        <p>สร้างบัญชีผู้เรียนเพื่อซื้อคอร์สและบันทึกข้อมูลการเรียน</p>
+        <label>ชื่อที่แสดง</label>
+        <input type="text" name="name" required placeholder="ชื่อของคุณ" />
+        <label>Username</label>
+        <input type="text" name="username" required autocomplete="username" placeholder="ตั้ง username" />
+        <label>Password</label>
+        <input type="password" name="password" required autocomplete="new-password" placeholder="ตั้งรหัสผ่าน" />
+        <button class="btn btn-gold btn-block" type="submit">สมัครสมาชิก</button>
+      </form>
+      <div class="form-success auth-message" id="authMessage"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-checkout></div>
+    <div class="modal-dialog checkout-dialog" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button class="modal-close" type="button" data-close-checkout aria-label="ปิด">×</button>
+      <div class="section-eyebrow">— Payment</div>
+      <h3 id="checkoutTitle">ชำระเงินผ่าน QR</h3>
+      <div class="qr-placeholder" aria-label="พื้นที่สำหรับรูป QR Code">
+        <span>QR</span>
+        <small>ยังไม่ใส่ src รูปภาพ</small>
+      </div>
+      <div class="checkout-items" id="checkoutItems"></div>
+      <div class="cart-total checkout-total">
+        <span>ยอดที่ต้องชำระ</span>
+        <strong id="checkoutTotal">฿0</strong>
+      </div>
+      <button class="btn btn-gold btn-block" type="button" id="confirmPaymentBtn">ชำระเงินแล้ว</button>
+      <p class="form-note">เมื่อกดปุ่มนี้ ระบบจะบันทึกคำสั่งซื้อและอัปเดตฐานข้อมูลทันที</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
