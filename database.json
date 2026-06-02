@@ -1,0 +1,162 @@
+{
+  "users": [
+    {
+      "id": "user_admin",
+      "name": "HopeZaa",
+      "username": "HopeZaa",
+      "passwordHash": "dce8115b485d1d72f2e2d4180a6173895b6bb9643070bf17742969f51f46a3e3",
+      "role": "admin",
+      "cart": [],
+      "purchases": [],
+      "createdAt": "2026-05-28T00:00:00.000Z"
+    },
+    {
+      "id": "user_ef5c8a700ca1e13b",
+      "name": "HopeZaaTest",
+      "username": "HopeZaaTest",
+      "passwordHash": "dce8115b485d1d72f2e2d4180a6173895b6bb9643070bf17742969f51f46a3e3",
+      "role": "student",
+      "cart": [],
+      "purchases": [],
+      "createdAt": "2026-05-27T18:45:15.970Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "frontend-foundation",
+      "title": "Frontend Foundation",
+      "level": "Beginner",
+      "description": "วางพื้นฐาน HTML, CSS, responsive layout, animation และหน้าเว็บที่พร้อมใช้เป็น portfolio จริง",
+      "price": 2490,
+      "lessons": 28,
+      "hours": 18,
+      "capacity": 100,
+      "enrolled": 0
+    },
+    {
+      "id": "javascript-mastery",
+      "title": "JavaScript Mastery",
+      "level": "Core Skill",
+      "description": "เข้าใจ JavaScript, DOM, async/await, fetch API และการจัด state แบบใช้กับเว็บจริง",
+      "price": 3290,
+      "lessons": 36,
+      "hours": 24,
+      "capacity": 100,
+      "enrolled": 0
+    },
+    {
+      "id": "react-professional",
+      "title": "React Professional",
+      "level": "Professional",
+      "description": "สร้าง React app ด้วย component, hook, form, routing และ dashboard ที่ต่อยอดได้จริง",
+      "price": 4290,
+      "lessons": 42,
+      "hours": 30,
+      "capacity": 100,
+      "enrolled": 0
+    },
+    {
+      "id": "node-backend",
+      "title": "Node.js Backend",
+      "level": "Backend",
+      "description": "สร้าง API, auth, session, file database และระบบคำสั่งซื้อแบบครบ flow",
+      "price": 4590,
+      "lessons": 40,
+      "hours": 32,
+      "capacity": 100,
+      "enrolled": 0
+    },
+    {
+      "id": "database-design",
+      "title": "Database Design",
+      "level": "System Design",
+      "description": "ออกแบบข้อมูล user, cart, order, review และ schema ที่ดูแลต่อได้ง่าย",
+      "price": 2990,
+      "lessons": 24,
+      "hours": 16,
+      "capacity": 100,
+      "enrolled": 0
+    },
+    {
+      "id": "fullstack-portfolio",
+      "title": "Full Stack Portfolio",
+      "level": "Capstone",
+      "description": "รวมทุกทักษะเพื่อสร้างเว็บขายคอร์ส ระบบสมาชิก ตะกร้า checkout และ admin dashboard",
+      "price": 5990,
+      "lessons": 54,
+      "hours": 42,
+      "capacity": 100,
+      "enrolled": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_ecb721df18f20e31",
+      "userId": "user_ef5c8a700ca1e13b",
+      "username": "HopeZaaTest",
+      "courseIds": [
+        "frontend-foundation"
+      ],
+      "total": 2490,
+      "status": "paid",
+      "paidAt": "2026-05-27T18:45:59.738Z"
+    },
+    {
+      "id": "order_fd81fc3d6e3a7544",
+      "userId": "user_ef5c8a700ca1e13b",
+      "username": "HopeZaaTest",
+      "courseIds": [
+        "javascript-mastery"
+      ],
+      "total": 3290,
+      "status": "paid",
+      "paidAt": "2026-05-27T18:46:18.188Z"
+    },
+    {
+      "id": "order_70796b6de93b0ae8",
+      "userId": "user_ef5c8a700ca1e13b",
+      "username": "HopeZaaTest",
+      "courseIds": [
+        "frontend-foundation"
+      ],
+      "total": 2490,
+      "status": "paid",
+      "paidAt": "2026-05-27T18:59:55.209Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review_1",
+      "name": "คุณแพรวา",
+      "courseId": "frontend-foundation",
+      "courseTitle": "Frontend Foundation",
+      "message": "จากที่เคยจัดหน้าเว็บไม่เป็น ตอนนี้ทำ landing page responsive ได้เองทั้งหน้า คอร์สเรียงเนื้อหาดีและเห็นภาพทุกขั้นตอน",
+      "createdAt": "2026-05-28T00:00:00.000Z"
+    },
+    {
+      "id": "review_2",
+      "name": "คุณภาคิน",
+      "courseId": "javascript-mastery",
+      "courseTitle": "JavaScript Mastery",
+      "message": "อธิบาย async และ fetch เข้าใจง่ายมาก ทำให้ต่อ API กับหน้าเว็บได้จริง ไม่ใช่แค่ดูตัวอย่างแล้วจบ",
+      "createdAt": "2026-05-28T00:00:00.000Z"
+    },
+    {
+      "id": "review_3",
+      "name": "คุณมินตรา",
+      "courseId": "fullstack-portfolio",
+      "courseTitle": "Full Stack Portfolio",
+      "message": "ชอบที่ได้ทำระบบครบตั้งแต่ login, cart, payment ไปจนถึง admin dashboard พอเรียนจบมีโปรเจกต์เอาไปโชว์ได้เลย",
+      "createdAt": "2026-05-28T00:00:00.000Z"
+    },
+    {
+      "id": "review_ec876a3e10a00716",
+      "name": "นายสิรวิชญ์ รูปงาม",
+      "courseId": "react-professional",
+      "courseTitle": "React Professional",
+      "message": "laddfjglkasdjlasdg",
+      "createdAt": "2026-05-29T01:36:06.589Z"
+    }
+  ],
+  "contacts": []
+}
